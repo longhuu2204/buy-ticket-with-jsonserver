@@ -1,0 +1,12 @@
+{
+  "account": [
+    {
+      "name": "Nguyễn Hữu Long",
+      "phone": "0339273681",
+      "email": "long.huu.2204@gmail.com",
+      "password": "long2204",
+      "birthday": "22/04/2000",
+      "sex": "male"
+    }
+  ]
+}

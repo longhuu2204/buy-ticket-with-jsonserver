@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-container {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* MovieList */
+.movie-list .swiper-slide {
+  width: 240px;
+  height: auto;
+}

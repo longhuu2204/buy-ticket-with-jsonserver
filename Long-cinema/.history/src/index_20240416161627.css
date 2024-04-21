@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.logo {
+  background-image: url("./path/to/logo.png");
+  background-color: rgba(0, 0, 0, 0); /* hoặc background-color: transparent; */
+  /* Các thuộc tính khác nếu cần */
+}

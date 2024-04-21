@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.logoImg {
+  background-image: url("https://banner2.cleanpng.com/20180615/oli/kisspng-cinema-film-director-television-film-digital-millennium-copyright-act-5b23cf472887a5.197278891529073479166.jpg");
+  background-color: rgba(0, 0, 0, 0); /* hoặc background-color: transparent; */
+  /* Các thuộc tính khác nếu cần */
+}
