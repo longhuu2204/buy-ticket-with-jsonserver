@@ -1,0 +1,24 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        primary: "#e71a0f",
+        secondary: "#FFFF00",
+        disable: "#ccc",
+      },
+      backgroundImage: {
+        "header-bg-img":
+          "url('	https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-top.png')",
+        "banner-bg-img":
+          "url('	https://www.cgv.vn/skin/frontend/cgv/default/images/bg_c_bricks.png')",
+        "home-title-bg-img":
+          "url('	https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_h3_line.jpg')",
+        "movie-selection-bg-img":
+          "url('	https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/h3_movie_selection.gif')",
+      },
+    },
+  },
+  plugins: [],
+};

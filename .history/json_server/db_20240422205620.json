@@ -1,0 +1,228 @@
+{
+  "account": [
+    {
+      "id": 1,
+      "name": "Nguyễn Hữu Long",
+      "phone": "0339273681",
+      "email": "long.huu.2204@gmail.com",
+      "password": "long2204",
+      "birthday": "22/04/2000",
+      "sex": "male"
+    }
+  ],
+  "banner": [
+    {
+      "id": 1,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/i/m/imgpsh_fullsize_anim_2.png"
+    },
+    {
+      "id": 2,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/n/o/no_980x448.jpg"
+    },
+    {
+      "id": 3,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/9/8/980wx448h_3_-min.jpg"
+    },
+    {
+      "id": 4,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/9/8/980wx448h_4_.jpg"
+    },
+    {
+      "id": 5,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/9/8/980wx448h_1_1__2.jpg"
+    },
+    {
+      "id": 6,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/9/8/980x448_1_-min_6.png"
+    },
+    {
+      "id": 7,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/d/d/dday_rbanner.png"
+    },
+    {
+      "id": 8,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/m/i/mini_adventure_rbanner.jpg"
+    },
+    {
+      "id": 9,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/b/a/ban_moi_rbanner.jpg"
+    },
+    {
+      "id": 10,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/l/m/lm7_rbanner.jpg"
+    },
+    {
+      "id": 11,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/9/8/980x448_117.png"
+    },
+    {
+      "id": 12,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/k/-/k-wave_rbanner-min.jpg"
+    },
+    {
+      "id": 13,
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/banner/cache/1/b58515f018eb873dafa430b6f9ae0c1e/9/8/980x448_113.png"
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "director": "Adam Wingard",
+      "cast": "Rebecca Hall; Brian Tyree Henry; Dan Stevens; Kaylee Hottle; Alex Ferns; Fala Chen,...",
+      "name": "GODZILLA X KONG: ĐẾ CHẾ MỚI",
+      "poster": "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/p/o/poster_payoff_godzilla_va_kong_3_1_.jpg",
+      "genre": ["Hành Động", "Phiêu Lưu"],
+      "trailer": "RXc2bs_aBuA",
+      "duration": 115,
+      "release_date": "29-03-2024"
+    },
+    {
+      "id": 2,
+      "director": "Fujii Michihito",
+      "cast": "Greg Hsu, Kaya Kiyohara, Chang Chen, Kuroki Hitomi, Michieda Shunsuke",
+      "name": "THANH XUÂN 18x2: LỮ TRÌNH HƯỚNG VỀ EM",
+      "poster": "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/4/0/406x600-18x2.jpg",
+      "genre": ["Tình Cảm"],
+      "trailer": "8Pq08VsVUFk",
+      "duration": 123,
+      "release_date": "12-04-2024"
+    },
+    {
+      "id": 3,
+      "director": "Tùng Leo, Michael Thái, Huỳnh Anh Duy",
+      "cast": "Jun Vũ, Khánh Vân, Khazsak, Tôn Kinh Lâm, Tùng, Việt Hưng, Vinh Râu,…",
+      "name": "B4S – TRƯỚC GIỜ “YÊU”",
+      "poster": "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/4/7/470wx700h-b4s_3.jpg",
+      "genre": ["Hài", "Tình Cảm"],
+      "trailer": "JJ_SyVWN9g0",
+      "duration": 98,
+      "release_date": "19-04-2024"
+    },
+    {
+      "id": 4,
+      "director": "Michael Mohan",
+      "cast": "Sydney Sweeney, Álvaro Morte, Simona Tabasco",
+      "name": "TU VIỆN MÁU",
+      "poster": "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/thumbnail/190x260/2e2b8cd282892c71872b9e67d2cb5039/p/o/poster_tu_vien_mau_8.jpg",
+      "genre": ["Kinh Dị"],
+      "trailer": "5ff3iUauZko",
+      "duration": 85,
+      "release_date": "19-04-2024"
+    },
+    {
+      "id": 5,
+      "cast": "Jack Black, Dustin Hoffman, James Hong, Awkwafina, .",
+      "director": "Mike Mitchell",
+      "name": "KUNG FU PANDA 4",
+      "poster": "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/4/7/470x700-kungfupanda4.jpg",
+      "genre": ["Hài", "Hoạt Hình"],
+      "trailer": "egkeFvm26pc",
+      "duration": 94,
+      "release_date": "08-03-2024"
+    }
+  ],
+  "showtime": [
+    {
+      "id": 1,
+      "movie_id": "1",
+      "room_id": "1",
+      "date": "16-04-2024",
+      "city": "Hà Nội",
+      "location": 1,
+      "type": "2D",
+      "time": "20:00 PM"
+    },
+    {
+      "id": 2,
+      "movie_id": "1",
+      "room_id": "1",
+      "date": "16-04-2024",
+      "city": "Hà Nội",
+      "location": 1,
+      "type": "2D",
+      "time": "22:00 PM"
+    },
+    {
+      "id": 5,
+      "movie_id": "1",
+      "room_id": "1",
+      "date": "16-04-2024",
+      "city": "Hà Nội",
+      "location": 2,
+      "type": "2D",
+      "time": "20:00 PM"
+    },
+    {
+      "id": 6,
+      "movie_id": "1",
+      "room_id": "1",
+      "date": "16-04-2024",
+      "city": "Hà Nội",
+      "location": 2,
+      "type": "2D",
+      "time": "22:00 PM"
+    },
+    {
+      "id": 3,
+      "movie_id": "2",
+      "room_id": "2",
+      "date": "16-04-2024",
+      "city": "Hà Nội",
+      "location": 1,
+      "type": "2D",
+      "time": "20:00 PM"
+    },
+    {
+      "id": 4,
+      "movie_id": "3",
+      "room_id": "3",
+      "date": "16-04-2024",
+      "city": "Hà Nội",
+      "location": 1,
+      "type": "2D",
+      "time": "20:00 PM"
+    }
+  ],
+  "ticket": [
+    {
+      "showtime_id": 1,
+      "account_id": 1,
+      "seat_id": [1, 2]
+    }
+  ],
+  "movietheater": [
+    {
+      "id": 1,
+      "name": "Rạp Bà Triệu"
+    },
+    {
+      "id": 2,
+      "name": "Rạp Hoàng Mai"
+    }
+  ],
+  "hall": [
+    {
+      "id": 1,
+      "theater_id":1,
+      "name":"1",
+      "seat_count":60
+    }
+    {
+      "id": 2,
+      "theater_id":1,
+      "seat_count":60
+      "name":2
+    }
+    {
+      "id": 3,
+      "theater_id":2,
+      "seat_count":60
+    }
+    {
+      "id": 4,
+      "theater_id":2,
+      "seat_count":60
+    }
+  ]
+
+}
