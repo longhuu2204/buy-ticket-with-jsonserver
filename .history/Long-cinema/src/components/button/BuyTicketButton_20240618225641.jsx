@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import ShowTimeList from "../layout/ShowTimeList";
+import { useHistory } from "react-router-dom";
 
 const BuyTicketButton = ({ item }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const navigate = useNavigate();
+  const history = useHistory();
 
   const handleBuyTicketClick = () => {
     const userInfoFromStorage = localStorage.getItem("userInfo");
@@ -13,7 +13,7 @@ const BuyTicketButton = ({ item }) => {
 
     if (!userInfo || !userInfo.id) {
       alert("Bạn cần đăng nhập để mua vé.");
-      navigate("/login");
+      history.push("/login");
     } else {
       setIsPopupOpen(true);
     }

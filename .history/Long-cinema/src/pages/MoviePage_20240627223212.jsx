@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchMovies } from "../redux-toolkit/moviesSlice";
+import { fetchMovies } from "../slices/moviesSlice"; // Đường dẫn đến file slice của bạn
 import MovieCard from "../components/movie/MovieCard";
 
 const MoviePage = () => {

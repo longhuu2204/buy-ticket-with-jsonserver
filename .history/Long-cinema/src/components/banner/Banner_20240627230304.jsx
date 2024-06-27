@@ -5,7 +5,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchBanners } from "../../redux-toolkit/bannerSlice";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const Banner = () => {
   const dispatch = useDispatch();
@@ -23,7 +22,7 @@ const Banner = () => {
       <div className="page-container flex justify-center">
         <Swiper
           grabCursor="true"
-          slidesPerView={"auto"}
+          slidesPerView={1}
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
@@ -36,7 +35,6 @@ const Banner = () => {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
-          modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
           {banners.length > 0 &&

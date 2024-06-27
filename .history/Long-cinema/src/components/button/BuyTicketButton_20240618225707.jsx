@@ -1,33 +1,22 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import ShowTimeList from "../layout/ShowTimeList";
 
 const BuyTicketButton = ({ item }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const navigate = useNavigate();
 
-  const handleBuyTicketClick = () => {
-    const userInfoFromStorage = localStorage.getItem("userInfo");
-    const userInfo = JSON.parse(userInfoFromStorage);
-
-    if (!userInfo || !userInfo.id) {
-      alert("Bạn cần đăng nhập để mua vé.");
-      navigate("/login");
-    } else {
-      setIsPopupOpen(true);
-    }
+  const HandleBuyTicketClick = () => {
+    setIsPopupOpen(true);
   };
 
   const handleClosePopupClick = () => {
     setIsPopupOpen(false);
   };
-
   return (
     <div>
       <Button
         className="display: flex gap-x-1 buy-ticket-button"
-        onClick={handleBuyTicketClick}
+        onClick={HandleBuyTicketClick}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -55,5 +44,4 @@ const BuyTicketButton = ({ item }) => {
     </div>
   );
 };
-
 export default BuyTicketButton;

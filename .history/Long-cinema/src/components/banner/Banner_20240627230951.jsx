@@ -37,6 +37,7 @@ const Banner = () => {
             prevEl: ".swiper-button-prev",
           }}
           modules={[Autoplay, Pagination, Navigation]}
+          scrollbar={{ hide: true }}
           className="mySwiper"
         >
           {banners.length > 0 &&

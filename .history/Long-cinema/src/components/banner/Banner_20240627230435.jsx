@@ -5,7 +5,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchBanners } from "../../redux-toolkit/bannerSlice";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const Banner = () => {
   const dispatch = useDispatch();

@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { confirmAlert } from "react-confirm-alert";
-import "react-confirm-alert/src/react-confirm-alert.css"; // Import css
 
 const TicketList = () => {
   const [tickets, setTickets] = useState([]);
@@ -32,30 +30,13 @@ const TicketList = () => {
       });
   };
 
-  const confirmCancel = (ticketId) => {
-    confirmAlert({
-      title: "Xác nhận hủy vé",
-      message: "Bạn có chắc chắn muốn hủy vé này?",
-      buttons: [
-        {
-          label: "Có",
-          onClick: () => handleCancelTicket(ticketId),
-        },
-        {
-          label: "Không",
-          onClick: () => {},
-        },
-      ],
-    });
-  };
-
   return (
     <div className="page-container">
       {tickets.map((ticket) => (
         <TicketComponent
           key={ticket.id}
           ticket={ticket}
-          onCancel={() => confirmCancel(ticket.id)}
+          onCancel={() => handleCancelTicket(ticket.id)}
         />
       ))}
     </div>

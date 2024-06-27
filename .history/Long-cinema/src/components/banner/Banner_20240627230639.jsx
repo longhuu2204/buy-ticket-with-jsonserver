@@ -20,6 +20,13 @@ const Banner = () => {
 
   return (
     <section className="banner h-[450px] mb-20 overflow-hidden mx-auto bg-banner-bg-img flex justify-center">
+      <style>
+        {`
+      .mySwiper {
+        overflow: hidden; /* Ẩn thanh cuộn */
+      }
+    `}
+      </style>
       <div className="page-container flex justify-center">
         <Swiper
           grabCursor="true"

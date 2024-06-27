@@ -1,23 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { useSelector, useDispatch } from "react-redux";
-import { fetchBanners } from "../../redux-toolkit/bannerSlice";
+
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-
+import useSWR from "swr";
+import { fetcher } from "../../config";
 const Banner = () => {
-  const dispatch = useDispatch();
-  const banners = useSelector((state) => state.banners.banners);
-  const { status } = useSelector((state) => state.banners);
-
+  const bannerApi = "http://localhost:3000/banner";
+  const [banners, setBanners] = useState([]);
+  const { data } = useSWR(bannerApi, fetcher);
   useEffect(() => {
-    if (status === "idle") {
-      dispatch(fetchBanners());
-    }
-  }, [status, dispatch]);
-
+    if (data && data.length) setBanners(data);
+  }, [data]);
   return (
     <section className="banner h-[450px] mb-20 overflow-hidden mx-auto bg-banner-bg-img flex justify-center">
       <div className="page-container flex justify-center">
@@ -52,17 +48,15 @@ const Banner = () => {
     </section>
   );
 };
-
 function BannerItem({ item }) {
   const { img } = item;
   return (
     <div className="w-full h-full relative">
-      <div className="absolute inset-0"></div>
+      <div className="absolute inset-0]"></div>
       <a href="">
         <img src={`${img}`} alt="" className="w-full h-full  object-cover" />
       </a>
     </div>
   );
 }
-
 export default Banner;

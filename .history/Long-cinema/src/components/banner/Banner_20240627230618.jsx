@@ -37,7 +37,7 @@ const Banner = () => {
             prevEl: ".swiper-button-prev",
           }}
           modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
+          className="mySwiper overflow-hidden"
         >
           {banners.length > 0 &&
             banners.map((item) => (

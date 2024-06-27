@@ -1,23 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { fetchMovies } from "../../redux-toolkit/moviesSlice";
+import useSWR from "swr";
+import { fetcher } from "../../config";
 import { Swiper, SwiperSlide } from "swiper/react";
 import MovieCard from "./MovieCard";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
 const MovieList = () => {
-  const dispatch = useDispatch();
-  const movies = useSelector((state) => state.movies.movies);
-  const movieStatus = useSelector((state) => state.movies.status);
-  const error = useSelector((state) => state.movies.error);
-  const loading = movieStatus === "loading";
-
+  const movieListApi = "http://localhost:3000/movies";
+  const [movies, setMovies] = useState([]);
+  const { data } = useSWR(movieListApi, fetcher);
   useEffect(() => {
-    if (movieStatus === "idle") {
-      dispatch(fetchMovies());
-    }
-  }, [movieStatus, dispatch]);
+    if (data) setMovies(data);
+  }, [data]);
   const swiperRef = useRef(null);
   const handlePrevButton = () => {
     if (swiperRef.current) {

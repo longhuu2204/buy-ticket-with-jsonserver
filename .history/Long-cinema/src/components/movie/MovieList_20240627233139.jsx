@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchMovies } from "../../redux-toolkit/moviesSlice";
+import { setMovies } from "../../redux-toolkit/moviesSlice";
 import { Swiper, SwiperSlide } from "swiper/react";
 import MovieCard from "./MovieCard";
 import "swiper/css/navigation";
@@ -9,15 +9,24 @@ import { Navigation } from "swiper/modules";
 const MovieList = () => {
   const dispatch = useDispatch();
   const movies = useSelector((state) => state.movies.movies);
-  const movieStatus = useSelector((state) => state.movies.status);
-  const error = useSelector((state) => state.movies.error);
-  const loading = movieStatus === "loading";
 
   useEffect(() => {
-    if (movieStatus === "idle") {
-      dispatch(fetchMovies());
-    }
-  }, [movieStatus, dispatch]);
+    // Thực hiện fetch dữ liệu và dispatch action để cập nhật state
+    const fetchMovies = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/movies");
+        if (!response.ok) {
+          throw new Error("Failed to fetch movies");
+        }
+        const data = await response.json();
+        dispatch(setMovies(data)); // Cập nhật state redux với danh sách phim từ API
+      } catch (error) {
+        console.error("Error fetching movies:", error);
+      }
+    };
+
+    fetchMovies();
+  }, [dispatch]);
   const swiperRef = useRef(null);
   const handlePrevButton = () => {
     if (swiperRef.current) {

@@ -20,7 +20,7 @@ const Banner = () => {
 
   return (
     <section className="banner h-[450px] mb-20 overflow-hidden mx-auto bg-banner-bg-img flex justify-center">
-      <div className="page-container flex justify-center">
+      <div className="page-container flex justify-center overflow-hidden">
         <Swiper
           grabCursor="true"
           slidesPerView={"auto"}

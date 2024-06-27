@@ -8,7 +8,7 @@ import configureStore from "./redux-toolkit/configureStore.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Provider store={configureStore}>
+      <Provider store={config}>
         <App />
       </Provider>
     </BrowserRouter>

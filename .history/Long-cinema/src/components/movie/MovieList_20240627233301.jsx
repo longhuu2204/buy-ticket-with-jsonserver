@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchMovies } from "../../redux-toolkit/moviesSlice";
+import { fetchMovies } from "../redux-toolkit/moviesSlice";
 import { Swiper, SwiperSlide } from "swiper/react";
 import MovieCard from "./MovieCard";
 import "swiper/css/navigation";

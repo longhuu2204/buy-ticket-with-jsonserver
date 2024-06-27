@@ -3,9 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchBanners } from "../../redux-toolkit/bannerSlice";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination, Scrollbar } from "swiper/modules";
 
 const Banner = () => {
   const dispatch = useDispatch();
@@ -36,7 +37,8 @@ const Banner = () => {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
-          modules={[Autoplay, Pagination, Navigation]}
+          scrollbar={{ hide: true }}
+          modules={[Autoplay, Pagination, Navigation, Scrollbar]}
           className="mySwiper"
         >
           {banners.length > 0 &&

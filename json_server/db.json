@@ -20,6 +20,18 @@
       "name": "Nguyễn Hữu Long",
       "email": "long.huu.2206@gmail.com",
       "password": "long2204"
+    },
+    {
+      "id": "24a4",
+      "name": "Nguyễn Hữu Long",
+      "email": "longhuusa02@gmail.com",
+      "password": "Long2204"
+    },
+    {
+      "id": "b125",
+      "name": "Nguyễn Hữu Long",
+      "email": "longhuusa03@gmail.com",
+      "password": "Long2204"
     }
   ],
   "banner": [
@@ -250,13 +262,41 @@
       "total": 600000
     },
     {
-      "id": "ed1b",
+      "id": "8da0",
       "showtime_id": "1",
       "account_id": "6a40",
       "seat_id": [
-        1,
-        2,
-        3
+        33,
+        34,
+        35
+      ],
+      "movie_name": "GODZILLA X KONG: ĐẾ CHẾ MỚI",
+      "hall_id": "1",
+      "location_id": "Rạp Bà Triệu",
+      "total": 300000
+    },
+    {
+      "id": "7ac9",
+      "showtime_id": "1",
+      "account_id": "24a4",
+      "seat_id": [
+        29,
+        30,
+        40
+      ],
+      "movie_name": "GODZILLA X KONG: ĐẾ CHẾ MỚI",
+      "hall_id": "1",
+      "location_id": "Rạp Bà Triệu",
+      "total": 300000
+    },
+    {
+      "id": "e65f",
+      "showtime_id": "1",
+      "account_id": "b125",
+      "seat_id": [
+        11,
+        21,
+        31
       ],
       "movie_name": "GODZILLA X KONG: ĐẾ CHẾ MỚI",
       "hall_id": "1",
